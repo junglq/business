@@ -881,7 +881,7 @@ body.ie .ibg img {
   width: 30px;
   height: 18px;
   cursor: pointer;
-  z-index: 6;
+  z-index: 666;
 }
 
 .menu-header__icon span {
@@ -1002,6 +1002,10 @@ body.ie .ibg img {
   top: -135px;
   background-image: -o-linear-gradient(251deg, #007397 0%, rgba(0, 115, 151, 0) 100%);
   background-image: linear-gradient(199deg, #007397 0%, rgba(0, 115, 151, 0) 100%);
+}
+
+.mainblock {
+  margin: 0px 0px 100px 0px;
 }
 
 .mainblock .imageblock {
@@ -1151,6 +1155,20 @@ body.ie .ibg img {
   .container {
     max-width: none;
     padding: 0 10px;
+  }
+
+  .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .header__body {
