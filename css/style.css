@@ -844,11 +844,6 @@ body.ie .ibg img {
   width: 100%;
 }
 
-.header {
-  position: relative;
-  z-index: 50;
-}
-
 .header__body {
   height: 100px;
   display: -webkit-box;
@@ -881,7 +876,7 @@ body.ie .ibg img {
   width: 30px;
   height: 18px;
   cursor: pointer;
-  z-index: 66666;
+  z-index: 6;
 }
 
 .menu-header__icon span {
