@@ -135,6 +135,7 @@ body.lock {
   overflow: hidden;
   text-transform: uppercase;
   position: relative;
+  min-width: 270px;
 }
 
 .btn span {
@@ -1004,6 +1005,15 @@ body.ie .ibg img {
   background-image: linear-gradient(199deg, #007397 0%, rgba(0, 115, 151, 0) 100%);
 }
 
+.title {
+  font-family: "PTSerif", serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 1px;
+  color: #3c3f3d;
+}
+
 .mainblock {
   margin: 0px 0px 100px 0px;
 }
@@ -1057,6 +1067,58 @@ body.ie .ibg img {
 
 .bottomblock__btn {
   margin: 40px 0px 0px 0px;
+}
+
+.investor__title {
+  margin: 0px 0px 50px 0px;
+}
+
+.investor__text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 36px;
+  text-align: left;
+  color: #646667;
+  max-width: 670px;
+  margin: 0px 0px 40px 0px;
+}
+
+.stat-investor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px -5px 30px -5px;
+}
+
+.stat-investor__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  padding: 0px 5px;
+  margin: 0px 0px 25px 0px;
+}
+
+.item-stat {
+  text-align: center;
+}
+
+.item-stat__value {
+  font-family: "PTSerif", serif;
+  font-size: 54px;
+  text-align: center;
+  color: #007397;
+  text-transform: uppercase;
+  margin: 0px 0px 8px 0px;
+}
+
+.item-stat__text {
+  font-size: 16px;
+  color: #aec3d4;
+  line-height: 32px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 991.98px) {
@@ -1130,6 +1192,10 @@ body.ie .ibg img {
     margin: 0px 0px 25px 0px;
   }
 
+  .mainblock {
+    margin: 0px 0px 80px 0px;
+  }
+
   .imageblock__title {
     font-size: 20px;
     max-width: 500px;
@@ -1148,6 +1214,15 @@ body.ie .ibg img {
 
   .bottomblock__btn {
     margin: 25px 0px 0px 0px;
+  }
+
+  .item-stat__value {
+    margin: 0px 0px 5px 0px;
+    font-size: 40px;
+  }
+
+  .item-stat__text {
+    font-size: 13px;
   }
 }
 
@@ -1224,6 +1299,15 @@ body.ie .ibg img {
     font-size: 14px;
   }
 
+  .title {
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .mainblock {
+    margin: 0px 0px 50px 0px;
+  }
+
   .imageblock__title {
     position: relative;
     bottom: 0;
@@ -1246,6 +1330,38 @@ body.ie .ibg img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .investor__title {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .investor__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .stat-investor__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333%;
+            flex: 0 0 33.333%;
+  }
+
+  .stat-investor {
+    margin: 0px -5px 0px -5px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .stat-investor__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
   }
 }
 @supports (-webkit-appearance:none){
@@ -1290,6 +1406,14 @@ body.ie .ibg img {
 }
 
  @media (max-width: 767.98px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 479.98px){
 
 @supports (-webkit-appearance:none){
 
