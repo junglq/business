@@ -94,7 +94,7 @@ function ibg() {
 ibg();
 
 if (document.querySelector('.wrapper')) {
-	document.querySelector('.wrapper').classList.add('_loaded');
+	document.querySelector('.wrapper').classList.add('loaded');
 }
 
 let unlock = true;
@@ -117,17 +117,17 @@ if (iconMenu != null) {
 	let menuBody = document.querySelector(".menu-header__menu");
 	iconMenu.addEventListener("click", function (e) {
 		if (unlock) {
-			body_lock(delay);
+			// body_lock(delay);
 			iconMenu.classList.toggle("active");
 			menuBody.classList.toggle("active");
 		}
 	});
 };
 function menu_close() {
-	let iconMenu = document.querySelector(".icon-menu");
-	let menuBody = document.querySelector(".menu__body");
-	iconMenu.classList.remove("_active");
-	menuBody.classList.remove("_active");
+	let iconMenu = document.querySelector(".menu-header__icon");
+	let menuBody = document.querySelector(".menu-header__menu");
+	iconMenu.classList.remove("active");
+	menuBody.classList.remove("active");
 }
 //=================
 //BodyLock
