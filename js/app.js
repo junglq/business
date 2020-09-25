@@ -113,7 +113,7 @@ if (location.hash) {
 //Menu
 let iconMenu = document.querySelector(".menu-header__icon");
 if (iconMenu != null) {
-	let delay = 500;
+	let delay = 100;
 	let menuBody = document.querySelector(".menu-header__menu");
 	iconMenu.addEventListener("click", function (e) {
 		if (unlock) {
